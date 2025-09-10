@@ -1,5 +1,35 @@
 #app-mount {
-	.perksModal-fSYqOq {
+    // Entire page background
+    .page_c48ade {
+        background: transparent;
+    }
+
+
+    // Title bar background
+    .themed__9293f {
+        background: rgba($color: #000000, $alpha: 0.7);
+    }
+
+    // Center background
+    .container__89463 {
+        background: transparent;
+    }
+
+    // "Level" row card background
+    div.container__5573a {
+        background: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    // Sidebar background
+    .sidebarContainer__89463 {
+        background: rgba($color: #000000, $alpha: var(--right-brightness));
+    }
+
+    //
+    // OLD STUFF
+    //
+
+	.contentContainer__89463 {
 		background-color: rgb(0, 0, 0, var(--middle-brightness));
 		background-image: none;
 		margin: var(--window-padding);
