@@ -8,5 +8,8 @@ export default {
 		source: 'https://github.com/DiscordStyles/FrostedGlass',
 		invite: 'ZHthyCw'
 	},
-	github: 'DiscordStyles'
+	github: 'DiscordStyles',
+    vencord: {
+        dev: true,
+    }
 };

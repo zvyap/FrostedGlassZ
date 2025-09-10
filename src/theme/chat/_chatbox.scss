@@ -1,8 +1,32 @@
 @use '@discordstyles/classes' as *;
 
+// Typing indicator background
+div.chatTypingGradientAtBottom__36d07.chatGradientBase__36d07 {
+    margin-bottom: 1px;
+    background: linear-gradient(to bottom, transparent, var(--textbox-typing-color));
+}
+
+// Chat bottom spacing patch
+.align-chat-input div.scrollerSpacer__36d07 {
+    height: 30px;
+}
+
+// Edit box outline
+div.channelTextArea__5126c.channelTextArea__74017 {
+    border: 1px solid transparent;
+    border-image: linear-gradient( 90deg, #3399ff, /* brighter */ #0069ff /* darker */ ) 1;
+}
+
+div.scrollableContainer__74017.themedBackground__74017 {
+    backdrop-filter: blur(10px);
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
 #{cls('mount')} {
 	#{cls('chat.textbox.container')} {
 		margin-top: 0;
+        padding-left: 0px;
+        padding-right: 16px;
 
 		//FIXME: Find out what this is
 		.themedBackground__74017 {
@@ -14,14 +38,23 @@
 		// 	padding: 10px;
 		// }
 
+        // Typing indicator
+        #{cls('chat.textbox.typing.container')} {
+            background: transparent;
+        }
+
 		#{cls('chat.textbox.placeholder')},
 		#{cls('chat.textbox.slate')} {
 			padding-left: 5px;
 		}
 
 		#{cls('chat.textbox.channelTextarea')} {
-			background: var(--channeltextarea-background);
-			border: none;
+            background: none; 
+            backdrop-filter: blur(10px);
+            background-color: rgb(0, 0, 0, 0.4);
+            border-radius: 10px;
+            border: 1px solid transparent;
+            border-image: linear-gradient( 225deg, #3399ff, /* brighter */ #0069ff /* darker */ ) 1;
 		}
 		//#endregion Textbox
 
