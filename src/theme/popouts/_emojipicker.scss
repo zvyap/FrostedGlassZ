@@ -77,7 +77,7 @@
 	}
 
 	//Stuff that should only apply to the super reaction picker
-	.appAsidePanelWrapper_a3002d .layerContainer_da8173 .clickTrapContainer_da8173 .layer_da8173 > div:has(.isBurstReactionPicker_c0e32c) {
+	.appAsidePanelWrapper_a3002d .layerContainer__59d0d .clickTrapContainer__59d0d .layer__59d0d > div:has(.isBurstReactionPicker_c0e32c) {
 		//Set back discord stupid super react effect but on a different layer because otherwise we cannot use a proper background
 		box-shadow: 0 0 0 2px var(--bg-brand);
 		border-radius: var(--custom-emoji-picker-border-radius);
@@ -95,7 +95,7 @@
 	}
 
 	//Stuff that should only apply to the reaction picker
-	.appAsidePanelWrapper_a3002d .layerContainer_da8173 .clickTrapContainer_da8173:not(:has(.emojiPickerHasTabWrapper_c0e32c)) #emoji-picker-tab-panel {
+	.appAsidePanelWrapper_a3002d .layerContainer__59d0d .clickTrapContainer__59d0d:not(:has(.emojiPickerHasTabWrapper_c0e32c)) #emoji-picker-tab-panel {
 		.categoryList_c0e32c {
 			top: 68px;
 		}
@@ -118,7 +118,7 @@
 			box-shadow: none;
 		}
 
-		.wrapper__14245, .wrapper__4e6ce {
+		.wrapper__14245, .wrapper__0d1ef {
 			background: var(--background-secondary);
 			// backdrop-filter: blur(10px) brightness(var(--frostedglass-emojipicker-header-brightness));
 

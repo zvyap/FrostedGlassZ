@@ -29,9 +29,9 @@
 	.container__56cd1,
 	.contextMenu-HLZMGh:not(.scroller-2FKFPG),
 	.contentWrapper__08434,
-	.appAsidePanelWrapper_a3002d .layerContainer_da8173 .clickTrapContainer_da8173 #emoji-picker-tab-panel, //for the reaction picker on messages, distinct from normal emoji picker
-	.messagesPopoutWrap__45690,
-	.modal__7f8f5:not(.slide-2pHaq5),
+	.appAsidePanelWrapper_a3002d .layerContainer__59d0d .clickTrapContainer__59d0d #emoji-picker-tab-panel, //for the reaction picker on messages, distinct from normal emoji picker
+	.messagesPopoutWrap_e8b59c,
+	.modal_ab9bdf:not(.slide-2pHaq5),
 	.root-1gCeng:not(.fullscreenOnMobile-1bD22y),
 	.root-8LYsGj,
 	.subMenuContext-2n_9YM .scrollerWrap-2lJEkd,
@@ -48,7 +48,7 @@
 	.picker__09f65,
 	.container-3a5mk-,
 	.popout__86331,
-	.popout__3f413,
+	.popout_a16aea,
 	.streamPreview__6da2d,
 	.wrapper_f7ecac {
 		overflow: hidden !important;
@@ -128,4 +128,9 @@
 			z-index: -1;
 		}
 	}
+}
+
+// Remove discord app default background color (potentially if user want to use --background-image: transparent;)
+.app__160d8, .appMount__51fd7, body {
+    background: transparent;
 }
