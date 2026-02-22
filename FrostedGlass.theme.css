@@ -12,6 +12,7 @@
 
 
 /* Old Windows titlebar - remove this @import if you wish to use default titlebar */
+@import url("https://chloecinders.github.io/visual-refresh-compact-title-bar/desktop.css");
 :root {
   /*
    * Background image variables
